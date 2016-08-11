@@ -1,0 +1,283 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 50px;
+  font: 15px/1.6 Helvetica, Arial, sans-serif;
+}
+
+.container > section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+section {
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  padding: 75px;
+}
+
+h3 {
+  margin: 0;
+}
+
+#actions {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  height: 50px;
+  padding: 0 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+}
+
+#tip.show {
+  animation-name: show;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+
+#tip {
+  position: absolute;
+  width: 75px;
+  text-align: center;
+  text-transform: none;
+  background: rgb(34, 39, 42);
+  color: white;
+  padding: 10px;
+  border-radius: 2px;
+  z-index: 100;
+  pointer-events: none;
+  font-size: .8em;
+  transition: all 150ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  opacity: 0;
+}
+
+#tip:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+#tip:after {
+	border-color: rgba(0,0,0,0);
+	border-top-color: rgb(34, 39, 42);
+	border-width: 5px;
+	margin-left: -5px;
+}
+
+.line-chart .column {
+  fill: RGB(230, 237, 244);
+}
+
+.line-chart .line {
+  stroke: RGB(243, 42, 100);
+  stroke-width: 3px;
+  fill: none;
+}
+
+.line-chart .axis text {
+  font: 9px sans-serif;
+}
+
+.line-chart .axis path,
+.line-chart .axis line {
+  fill: none;
+  stroke: RGB(230, 237, 244);
+  stroke-width: 1.5px;
+  shape-rendering: crispEdges;
+}
+
+.line-chart .axis path {
+  display: none;
+}
+
+.series-chart .bg {
+  stroke: #E6EDF4;
+  stroke-width: 2;
+}
+
+.series-chart .point {
+  stroke: red;
+  stroke-width: 5;
+}
+
+.series-chart .series.success .point {
+  stroke: #0bbbe2;
+  /*-webkit-filter: drop-shadow( -5px -5px 5px red );
+   filter: drop-shadow( -5px -5px 5px red );*/
+}
+
+.series-chart .series.client .point {
+  stroke: #F12E65;
+}
+
+.series-chart .series.server .point {
+  stroke: #F12E65;
+}
+
+.series-chart .series.net .point {
+  stroke: #F12E65;
+}
+
+.series-chart .label {
+  font: 10px sans-serif;
+}
+
+.series-chart .x.axis {
+  transition: all 200ms;
+}
+
+.series-chart:hover .x.axis {
+  opacity: 0;
+}
+
+.series-chart .value {
+  font: 10px sans-serif;
+  text-anchor: start;
+  alignment-baseline: middle;
+}
+
+.series-chart .details .x {
+  stroke: rgb(245, 245, 245);
+  stroke-width: 3px;
+}
+
+.series-chart .details .time {
+  font: 10px sans-serif;
+  alignment-baseline: hanging;
+  text-anchor: middle;
+}
+
+.series-chart .axis text {
+  font: 9px sans-serif;
+}
+
+.series-chart .axis path,
+.series-chart .axis line {
+  fill: none;
+  stroke: RGB(230, 237, 244);
+  stroke-width: 1px;
+  stroke-dasharray: 1,2;
+  shape-rendering: crispEdges;
+}
+
+.series-chart .axis path {
+  display: none;
+}
+
+.series-chart.dark .axis path,
+.series-chart.dark .axis line {
+  stroke: #282b2e;
+}
+
+.heatmap-chart .grid {
+  stroke: RGB(230, 237, 244);
+}
+
+.heatmap-chart .bin:hover {
+  stroke: black
+}
+
+.heatmap-chart .axis text {
+  font: 9px sans-serif;
+}
+
+.heatmap-chart .axis path,
+.heatmap-chart .axis line {
+  fill: none;
+  stroke: RGB(230, 237, 244);
+  stroke-width: 1.5px;
+  shape-rendering: crispEdges;
+}
+
+.heatmap-chart .axis path {
+  display: none;
+}
+
+.circle-chart .background {
+  fill: RGB(230, 237, 244)
+}
+
+.circle-chart .foreground {
+  fill: RGB(0, 181, 241)
+}
+
+.circle-chart .label {
+  fill: RGB(0, 181, 241);
+  font: 18px sans-serif;
+  text-anchor: middle;
+  alignment-baseline: middle;
+}
+
+.bar-chart .column {
+  fill: RGB(230, 237, 244);
+}
+
+.bar-chart .bar {
+  fill: RGB(243, 42, 100);
+}
+
+.bar-chart .axis text {
+  font: 9px sans-serif;
+}
+
+.bar-chart .axis path,
+.bar-chart .axis line {
+  fill: none;
+  stroke: RGB(230, 237, 244);
+  stroke-width: 1.5px;
+  shape-rendering: crispEdges;
+}
+
+.bar-chart .axis path {
+  display: none;
+}
+
+.dot-chart .axis text {
+  font: 9px sans-serif;
+}
+
+.dot-chart .axis path,
+.dot-chart .axis line {
+  fill: none;
+  stroke: RGB(230, 237, 244);
+  stroke-width: 1.5px;
+  shape-rendering: crispEdges;
+}
+
+.dot-chart .axis path {
+  display: none;
+}

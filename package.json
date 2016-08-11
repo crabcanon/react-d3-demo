@@ -1,0 +1,21 @@
+{
+  "name": "react-fatigue-dev-boiler",
+  "version": "0.0.1",
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "dependencies": {
+    "react-fatigue-dev": "github:tj/react-fatigue-dev",
+    "d3": "^4.2.1",
+    "d3-bar": "^1.8.0",
+    "d3-circle": "^1.0.0",
+    "d3-dot": "^1.2.1",
+    "d3-heatmap": "^1.2.1",
+    "d3-line": "0.0.1",
+    "d3-series": "^1.0.0",
+    "d3-tipy": "^1.2.3",
+    "faker": "^3.1.0"
+  }
+}
