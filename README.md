@@ -1,23 +1,27 @@
 
-# react-fatigue-dev-boiler
+# react-d3-demo
 
-Clone this repo if you want to start prototyping a component and then run:
+Demos created by the following React components:
+
+- [d3-series](https://github.com/tj/d3-series)
+- [d3-heatmap](https://github.com/tj/d3-heatmap)
+- [d3-dot](https://github.com/tj/d3-dot)
+- [d3-line](https://github.com/tj/d3-line)
+- [d3-bar](https://github.com/tj/d3-bar)
+- [d3-circle](https://github.com/tj/d3-circle)
+- [d3-tipy](https://github.com/tj/d3-tipy)
+
+## Get started
+
+Clone this repo then run:
 
 ```
 $ npm install
 $ make start
 ```
 
-Note you'll probably want to pin react-fatigue-dev to a specific GIT SHA.
-
-## Badges
-
-![](https://img.shields.io/badge/license-MIT-blue.svg)
-![](https://img.shields.io/badge/status-stable-green.svg)
-[![](http://apex.sh/images/badge.svg)](https://apex.sh/ping/)
-
 ---
 
-> [tjholowaychuk.com](http://tjholowaychuk.com) &nbsp;&middot;&nbsp;
-> GitHub [@tj](https://github.com/tj) &nbsp;&middot;&nbsp;
-> Twitter [@tjholowaychuk](https://twitter.com/tjholowaychuk)
+> [yehuang.me](https://yehuang.me) &nbsp;&middot;&nbsp;
+> GitHub [@crabcanon](https://github.com/crabcanon) &nbsp;&middot;&nbsp;
+> Twitter [@sysuhuangye](https://twitter.com/sysuhuangye)
