@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "public": "example",
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
