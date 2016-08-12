@@ -8,7 +8,6 @@ import LineChart from 'd3-line'
 import SeriesChart from 'd3-series'
 import Tip from 'd3-tipy'
 import d3 from 'd3'
-import faker from 'faker'
 
 const genBarData = n => {
   const data = []
