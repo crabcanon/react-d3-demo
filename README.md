@@ -24,4 +24,4 @@ $ make start
 
 > [yehuang.me](https://yehuang.me) &nbsp;&middot;&nbsp;
 > GitHub [@crabcanon](https://github.com/crabcanon) &nbsp;&middot;&nbsp;
-> Twitter [@sysuhuangye](https://twitter.com/sysuhuangye)
+> Gmail [@sysuhuangye](<mailto:sysuhuangye@gmail.com>)
